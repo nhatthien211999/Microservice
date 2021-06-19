@@ -19,6 +19,8 @@ const page_load = () => {
 }
 
 const btnSearch_Click = () => {
+    document.getElementById("success").innerHTML = "";
+    document.getElementById("err").innerHTML = "";
     let keyword = document.getElementById("txtKeyword").value.trim();
     if (keyword.length > 0)
       search(keyword);
