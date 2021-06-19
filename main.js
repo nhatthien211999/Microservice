@@ -63,21 +63,21 @@ const check_email = async (email) => {
         let user = element.val();
         if(user.email === email){
             key = element.key;
-            console.log('for: ' + key);
+            // console.log('for: ' + key);
         }
       });
     });
     
-    console.log('after ' + key);
+    // console.log('after ' + key);
 
     if(key !== ''){
-        console.log(key);
+        // console.log(key);
         return false;
     }else{
         return true;
     }   
-   
 }
+
 const check_login = async (userLogin) => {
     let key = '';
     await dbRef.child("users").once("value", (snapshot) => {
@@ -85,12 +85,12 @@ const check_login = async (userLogin) => {
         let user = element.val();
         if(user.email === userLogin.email && user.password === userLogin.password){
             key = element.key;
-            console.log('for: ' + key);
+            // console.log('for: ' + key);
         }
       });
     });
     
-    console.log('after ' + key);
+    // console.log('after ' + key);
 
     if(key === ''){
         
