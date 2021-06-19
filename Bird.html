@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./birdDAO.js"></script> -->
+    <script src="./bird.js"></script>
+   
+    <title>Document</title>
+</head>
+<body onload="page_load()">
+    <h1>Bird List</h1>
+    <label for="txtKeyword">Keyword</label>
+    <input type="text" id="txtKeyword" placeholder="Keyword" />&nbsp;
+    <button onclick="btnSearch_Click()">SEARCH</button>
+    <br>
+
+    <div id="err" style="background-color: red; color: #fff;"></div>
+    <div id="success" style="background-color: greenyellow; color: #000;"></div>
+
+    <table id="lists" border="1"></table>
+    <br />
+    <label for="txtCode">Code</label>
+    <input type="number" name="txtCode" id="txtCode" required>
+    <br>
+    <label for="txtName">Name</label>
+    <input type="text" name="txtName" id="txtName" required>
+    <br>
+    <label for="txtPrice">Price</label>
+    <input type="number" name="txtPrice" id="txtPrice" required>
+    <br>
+    <label for="txtinfo">Information</label>
+    <input type="text" name="txtinfo" id="txtInfo" required>
+    <br>
+    <label for="txtType">Type</label>
+    <input type="text" name="txtType" id="txtType" required>
+    <br>
+    <button onclick="btnAdd_click()">Add</button>
+    <button onclick="btnUpdate_click()">Update</button>
+    <button onclick="btnDelete_click()">Delete</button>
+
+</body>
+</html>
